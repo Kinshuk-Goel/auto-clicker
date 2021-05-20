@@ -6,7 +6,7 @@ from pynput.keyboard import Listener, KeyCode
 delay = 0.001
 button = Button.left
 start_stop_key = KeyCode(char='x')
-exit_key = KeyCode(char='x')
+exit_key = KeyCode(char='z')
 
 class ClickMouse(threading.Thread) :
 	def __init__(self, delay, button):
