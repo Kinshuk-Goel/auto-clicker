@@ -42,7 +42,7 @@ def on_press(key):
 			click_thread.stop_clicking()
 		else:
 			click_thread.start_clicking()
-		elif key == exit_key:
+	elif key == exit_key:
 			click_thread.exit()
 			listener.stop()
 
