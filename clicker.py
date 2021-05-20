@@ -28,6 +28,7 @@ class ClickMouse(threading.Thread) :
 
 	def run(self):
 		while self.program_running:
+			time.sleep(0.1)
 			while self.running:
 				mouse.click(self.button)
 				time.sleep(self.delay)
@@ -48,3 +49,5 @@ def on_press(key):
 
 with Listener(on_press=on_press) as listener:
 	listener.join()
+
+print("This program is running. To stop it suspend the program by doing Ctrl+Z")
